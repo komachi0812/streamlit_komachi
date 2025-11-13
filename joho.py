@@ -34,9 +34,15 @@ if st.button("結果を表示"):
     st.subheader("結果発表")
     st.write(f"あなたの合計スコア: **{total_score}**")
 
-    if total_score <= 10:
-        st.success("【提案】リラックスして休むのが良さそうです。")
-    elif 11 <= total_score <= 20:
-        st.info("【提案】軽い運動や趣味をしてみましょう。")
-    else:
-        st.warning("【提案】今のうちに集中してやりたいことを進めましょう！")
+    if total_score < -9:
+        st.success("今すぐタバコを吸ってください！！！！！")
+    elif -9 <= total_score < -5:
+        st.info("あなたは暖かいベッドで休んでください！")
+    elif -5 <= total_score < 0:
+        st.info("少し調子悪いですか？おいしいものでも食べましょう！")
+    elif 0 <= total_score < 5:
+        st.info("割と元気ですね！外で運動しましょう！")
+    elif 5 <= total_score < 9:
+        st.info("元気いっぱいですね！その元気をみんなにも分けてあげましょう！")
+    elif  total_score <= 9:
+        st.info("タバコを吸いましたね？今のあなたには敵なしです！！")
