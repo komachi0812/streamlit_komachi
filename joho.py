@@ -2,7 +2,7 @@ import streamlit as st
 
 st.title("🧭 今のあなたに合った行動診断")
 
-st.write("以下の質問に答えてください（3択×10問）")
+st.write("以下の質問に答えてください")
 
 # ===== 質問リスト =====
 questions = [
